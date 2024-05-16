@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GoEnd
+﻿namespace GoEnd
 {
-    public interface IOperationProvider
-    {
-        public IEnumerable<Operation> Get();
-    }
-
     public class OperationProvider : IOperationProvider
     {
         private IEnumerable<Operation> operations;

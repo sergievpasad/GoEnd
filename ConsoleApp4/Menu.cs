@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GoEnd
+﻿namespace GoEnd
 {
-    public interface IMenu
-    {
-        public void Show(Operation[] operations);
-        public Operation TakeOper(Operation[] operations);
-    }
-
-    public sealed class Menu : IMenu
+    public class Menu : IMenu
     {
         public void Show(Operation[] operations)
         {
@@ -21,13 +9,13 @@ namespace GoEnd
             {
                 Operation operation = operations[i];
                 Console.WriteLine($"{i + 1}. {operation.Name}");
+
             }
+            Console.Write("Выберите действие: ");
         }
         public Operation TakeOper(Operation[] operations)
         {
-            Console.Write("Выберите действие: ");
             return operations[Convert.ToInt32(Console.ReadLine()) - 1];
         }
     }
-
 }
