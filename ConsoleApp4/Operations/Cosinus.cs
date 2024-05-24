@@ -2,7 +2,10 @@
 {
     public sealed class Cosinus : Operation
     {
-        public override string Name => "Косинус";
+        public Cosinus() : base("Косинус")
+        {
+
+        }
 
         public override double Run(params double[] numbers)
         {

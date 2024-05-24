@@ -2,7 +2,10 @@
 {
     public sealed class Addition : Operation
     {
-        public override string Name => "Сложение";
+        public Addition() : base("Сложение")
+        {
+
+        }
 
         public override double Run(params double[] numbers)
         {

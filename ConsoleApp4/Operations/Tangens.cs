@@ -2,7 +2,10 @@
 {
     public sealed class Tangens : Operation
     {
-        public override string Name => "Тангенс";
+        public Tangens() : base("Тангенс")
+        {
+
+        }
         public override double Run(params double[] numbers)
         {
             return Math.Tan(numbers[0]);

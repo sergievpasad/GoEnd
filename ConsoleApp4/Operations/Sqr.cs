@@ -2,7 +2,10 @@
 {
     public sealed class Sqr : Operation
     {
-        public override string Name => "Возведение в степень";
+        public Sqr() : base("Степень")
+        {
+
+        }
 
         public override double Run(params double[] numbers)
         {

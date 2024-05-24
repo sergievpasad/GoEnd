@@ -2,7 +2,10 @@
 {
     public sealed class Factorial : Operation
     {
-        public override string Name => "Факториал";
+        public Factorial() : base("Факториал")
+        {
+
+        }
         public override double Run(params double[] numbers)
         {
             if (numbers[0] == 0)

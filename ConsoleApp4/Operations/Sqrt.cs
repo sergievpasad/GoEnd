@@ -2,7 +2,10 @@
 {
     public sealed class Sqrt : Operation
     {
-        public override string Name => "Корень";
+        public Sqrt() : base("Корень")
+        {
+
+        }
 
         public override double Run(params double[] numbers)
         {

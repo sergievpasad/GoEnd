@@ -1,18 +1,16 @@
-﻿namespace GoEnd
+﻿namespace GoEnd;
+
+public sealed class OperationProvider : IOperationProvider
 {
-    public class OperationProvider : IOperationProvider
+    private IEnumerable<Operation> operations;
+
+    public OperationProvider(IEnumerable<Operation> operations)
     {
-        private IEnumerable<Operation> operations;
+        this.operations = operations;
+    }
 
-        public OperationProvider(IEnumerable<Operation> operations)
-        {
-            this.operations = operations;
-        }
-
-        public IEnumerable<Operation> Get()
-        {
-            return operations;
-        }
+    public IEnumerable<Operation> Get()
+    {
+        return operations;
     }
 }
-
