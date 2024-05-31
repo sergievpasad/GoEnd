@@ -2,7 +2,7 @@
 {
     public sealed class Multiplacation : Operation
     {
-        public Multiplacation() : base("Умножение")
+        public Multiplacation() : base("Умножение",2)
         {
 
         }

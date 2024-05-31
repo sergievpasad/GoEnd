@@ -2,7 +2,7 @@
 {
     public sealed class Addition : Operation
     {
-        public Addition() : base("Сложение")
+        public Addition() : base("Сложение",2)
         {
 
         }

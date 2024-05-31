@@ -2,7 +2,7 @@
 {
     public sealed class Donate : Operation
     {
-        public Donate() : base("Дайте деняк")
+        public Donate() : base("Дайте деняк", 1)
         {
 
         }

@@ -2,7 +2,7 @@
 {
     public sealed class Cosinus : Operation
     {
-        public Cosinus() : base("Косинус")
+        public Cosinus() : base("Косинус",1)
         {
 
         }

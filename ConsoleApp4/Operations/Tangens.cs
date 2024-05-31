@@ -2,7 +2,7 @@
 {
     public sealed class Tangens : Operation
     {
-        public Tangens() : base("Тангенс")
+        public Tangens() : base("Тангенс",1)
         {
 
         }

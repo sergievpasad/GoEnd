@@ -2,7 +2,7 @@
 {
     public sealed class Sqrt : Operation
     {
-        public Sqrt() : base("Корень")
+        public Sqrt() : base("Корень",2)
         {
 
         }

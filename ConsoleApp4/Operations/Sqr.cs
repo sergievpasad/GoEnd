@@ -2,7 +2,7 @@
 {
     public sealed class Sqr : Operation
     {
-        public Sqr() : base("Степень")
+        public Sqr() : base("Степень",2)
         {
 
         }

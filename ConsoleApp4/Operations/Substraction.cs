@@ -2,7 +2,7 @@
 {
     public sealed class Substraction : Operation
     {
-        public Substraction() : base("Вычитание")
+        public Substraction() : base("Вычитание",2)
         {
 
         }

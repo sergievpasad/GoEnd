@@ -2,7 +2,7 @@
 {
     public sealed class Module : Operation
     {
-        public Module() : base("Модуль")
+        public Module() : base("Модуль",1)
         {
 
         }

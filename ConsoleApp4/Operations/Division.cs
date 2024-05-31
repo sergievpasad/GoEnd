@@ -2,7 +2,7 @@
 {
     public sealed class Division : Operation
     {
-        public Division() : base("Деление")
+        public Division() : base("Деление",2)
         {
 
         }

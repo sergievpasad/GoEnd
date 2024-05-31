@@ -2,7 +2,7 @@
 {
     public sealed class Cotangens : Operation
     {
-        public Cotangens() : base("Котангенс")
+        public Cotangens() : base("Котангенс",1)
         {
 
         }

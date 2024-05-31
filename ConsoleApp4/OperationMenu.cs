@@ -18,7 +18,7 @@ public sealed class OperationMenu : IMenu<IOperation>
         Console.WriteLine("======== КАЛЬКУЛЯТОР ==========");
         int i = 1;
         foreach (IOperation operation in operationProvider.Get())
-            Console.WriteLine($"{i++}. {operation.Name}");
+            Console.WriteLine($"{i++}. {operation.NumCount}");
         return this;
     }
 }

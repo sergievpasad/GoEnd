@@ -2,7 +2,7 @@
 {
     public sealed class Factorial : Operation
     {
-        public Factorial() : base("Факториал")
+        public Factorial() : base("Факториал",1)
         {
 
         }

@@ -2,7 +2,7 @@
 {
     public sealed class Sinus : Operation
     {
-        public Sinus() : base("Синус")
+        public Sinus() : base("Синус",1)
         {
 
         }
