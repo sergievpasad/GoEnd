@@ -8,7 +8,7 @@
         }
         public override double Run(params double[] numbers)
         {
-            return 1 / Math.Tan(numbers[0]);
+            return 1 / Math.Tan(numbers[0] * double.Pi / 180);
         }
     }
 

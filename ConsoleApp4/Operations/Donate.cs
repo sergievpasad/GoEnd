@@ -1,15 +1,14 @@
 ﻿namespace GoEnd
 {
-    public sealed class Donate : Operation
+    public sealed class Donate : PrintOperation
     {
-        public Donate() : base("Дайте деняк", 1)
+        public Donate() : base("Дайте деняк")
         {
 
         }
-        public override double Run(params double[] numbers)
+        public override void Run()
         {
             Console.WriteLine("Тинькофф: 408178103000082186643\nСбербанк: 40817810668782919804");
-            return 0d;
         }
     }
 

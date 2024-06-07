@@ -9,7 +9,7 @@
 
         public override double Run(params double[] numbers)
         {
-            return Math.Cos(numbers[0]);
+            return Math.Cos(numbers[0] * double.Pi / 180);
         }
     }
 

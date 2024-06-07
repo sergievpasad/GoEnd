@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GoEnd
 {
-    internal interface IReadOperation
+    internal interface IReadNumbers
     {
-        public int NumberOper { get; }
+        public double[] ReadNums(int NumCount);
     }
 }

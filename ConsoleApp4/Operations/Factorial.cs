@@ -1,4 +1,6 @@
-﻿namespace GoEnd
+﻿using System;
+
+namespace GoEnd
 {
     public sealed class Factorial : Operation
     {
@@ -12,7 +14,10 @@
             {
                 return 1;
             }
-            return numbers[0] * Run(numbers[0] - 1);
+            
+                return numbers[0] * Run(numbers[0] - 1);
+            
+
         }
     }
 

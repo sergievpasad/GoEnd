@@ -51,7 +51,7 @@ internal class LocalInstaller : IWindsorInstaller
                      .ImplementedBy<Module>(),
             Component.For<Operation>()
                      .ImplementedBy<Factorial>(),
-            Component.For<Operation>()
+            Component.For<PrintOperation>()
                      .ImplementedBy<Donate>()
         );
     }
