@@ -14,28 +14,20 @@ public class Application
 
     public void Run()
     {
-        Console.Write("Введите пароль: ");
-        ConsoleKey key = Console.ReadKey().Key;
-        if (key == ConsoleKey.Z)
+        CheckThePassword us = new CheckThePassword();
+        ReadNumbers readNumbers = new ReadNumbers();
+        Continue next = new Continue();
+        us.CheckPaswword();
+        ConsoleKey key = ConsoleKey.Z ;
+        while (key != ConsoleKey.Escape)
         {
-            key = Console.ReadKey().Key;
-            if (key == ConsoleKey.X)
-            {
-                key = Console.ReadKey().Key;
-                if (key == ConsoleKey.C)
-                {
-                    Console.Clear();
-                    while (key != ConsoleKey.Escape)
-                    {
-                        ReadNumbers readNumbers = new ReadNumbers();
-                        Operation operation = (Operation)menu.Show().ItemSelector.Select();
-                        double result = operation.Run(readNumbers.ReadNums(operation.NumCount));
-                        Console.WriteLine($"Результат: {result}");
-                        key = Console.ReadKey().Key;
-                        Console.Clear();
-                    }
-                }
-            }
-        }
+            
+            Operation operation = (Operation)menu.Show().ItemSelector.Select();
+            double result = operation.Run(readNumbers.ReadNums(operation.NumCount));
+            Console.WriteLine($"Результат: {result}");
+            next.ContinueWrite();
+            key =Console.ReadKey().Key;
+            Console.Clear();
+        }                
     }
 }
